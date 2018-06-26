@@ -1,7 +1,7 @@
-# Note this is the default .gitignore file recommended from the HASS config instructions from https://www.home-assistant.io/docs/ecosystem/backup/backup_github/
-*
-!*.yaml
-!scenes
-!.gitignore
+.HA_VERSION
+.uuid
+home-assistant.log
+home-assistant_v2.db
+
 secrets.yaml
 known_devices.yaml
