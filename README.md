@@ -1,9 +1,9 @@
-#WELCOME TO MY HASS CONFIGURATION REPO!
-##May you find what you seek :)
+# WELCOME TO MY HASS CONFIGURATION REPO!
+## May you find what you seek :)
 ----------------------------------------------------------------
-##SOFTWARE SETUP FOR HOME ASSISTANT (HASS):
+## SOFTWARE SETUP FOR HOME ASSISTANT (HASS):
 1. Install dependencies if they are not already installed.
-      sudo pacman install python3 python3-venv python3-pip
+      `sudo pacman install python3 python3-venv python3-pip`
 
 2. Add an account for Home Assistant called homeassistant.
    Since this account is only for running Home Assistant the extra argument
@@ -11,7 +11,7 @@
    The arguments -G uucp adds the user to the dialout group
    (so that useraccount has control of RS-232 serial ports and devices connected to them).
    uucp/dialout group is required for using Z-Wave and Zigbee controllers.
-      sudo useradd -rm homeassistant -G uucp
+      `sudo useradd -rm homeassistant -G uucp`
 
 3. Create a directory for the installation of Home Assistant and
    change the owner to the homeassistant account.
@@ -43,7 +43,7 @@
    the web interface on http://ipaddress:8123.
    (Change the ipaddress part to be whatever your ip address is).
 
-###SOURCE:
+### SOURCE:  
 https://www.home-assistant.io/docs/installation/raspberry-pi/
 
 8. Next you can setup HASS so that it auto-starts on laptop boot up.
@@ -69,7 +69,7 @@ https://www.home-assistant.io/docs/installation/raspberry-pi/
     Note: You can also substitute the 'start' above with 'stop' to stop Home Assistant,
     'restart' to restart Home Assistant, and ‘status’ to see a brief status report.
 
-###ADDITIONAL INFO:
+### ADDITIONAL INFO:
 - To disable the automatic start, use this command:
       sudo systemctl disable home-assistant@homeassistant
 - To get Home Assistant’s logging output, simple use journalctl:
@@ -80,11 +80,11 @@ https://www.home-assistant.io/docs/installation/raspberry-pi/
   then watch the log output by combining the above commands using &&
       sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant
 
-###SOURCE:
+### SOURCE:  
 https://www.home-assistant.io/docs/autostart/systemd/
 
 ------------------------------------------------------------------
-##PRE-SOFTWARE SETUP FOR GIT-CRYPT:
+## PRE-SOFTWARE SETUP FOR GIT-CRYPT:
 1. Check whether you have GPG installed already (ie. type gpg --version).
 
    Otherwise download the GPG command line tool from https://www.gnupg.org/download/
@@ -127,11 +127,11 @@ https://www.home-assistant.io/docs/autostart/systemd/
 6. Now tell git which key to use.
       git config --global user.signingkey [your own GPG key ID goes here, eg. 30F2B65B9246B6CA]
 
-###SOURCE:
+### SOURCE:  
 https://docs.gitlab.com/ee/user/project/repository/gpg_signed_commits/index.html
 
 ------------------------------------------------------------------
-##SOFTWARE SETUP FOR GIT-CRYPT:
+## SOFTWARE SETUP FOR GIT-CRYPT:
 1. Download git crypt from:
    https://www.agwa.name/projects/git-crypt/downloads/git-crypt-0.6.0.tar.gz
 
@@ -159,11 +159,11 @@ https://docs.gitlab.com/ee/user/project/repository/gpg_signed_commits/index.html
       *.key filter=git-crypt diff=git-crypt
 
 /*
-###NOTE A:
+### NOTE A:
 After cloning a repository with encrypted files, unlock with:
       git-crypt unlock
 
-###NOTE B:
+### NOTE B:
 The .gitattributes file is documented in the gitattributes(5) man page.
 The file pattern format is the same as the one used by .gitignore,
 as documented in the gitignore(5) man page, with the exception that
@@ -180,5 +180,5 @@ following in dir/.gitattributes:
 The second pattern is essential for ensuring that .gitattributes itself
 is not encrypted.
 
-###SOURCE:
+### SOURCE:
 https://www.agwa.name/projects/git-crypt/
