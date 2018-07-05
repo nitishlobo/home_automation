@@ -1,46 +1,45 @@
-# WELCOME TO MY HASS CONFIGURATION REPO!
-## May you find what you seek :)
+# WELCOME TO MY HASS REPO! MAY YOU FIND WHAT YOU SEEK.
 ----------------------------------------------------------------
 ## SOFTWARE SETUP FOR HOME ASSISTANT (HASS):
-1. Install dependencies if they are not already installed.
+1. Install dependencies if they are not already installed.  
       `sudo pacman install python3 python3-venv python3-pip`
 
-2. Add an account for Home Assistant called homeassistant.
-   Since this account is only for running Home Assistant the extra argument
-   of -rm is added to create a system account and create a home directory.
-   The arguments -G uucp adds the user to the dialout group
-   (so that useraccount has control of RS-232 serial ports and devices connected to them).
-   uucp/dialout group is required for using Z-Wave and Zigbee controllers.
+2. Add an account for Home Assistant called homeassistant.  
+   Since this account is only for running Home Assistant the extra argument  
+   of -rm is added to create a system account and create a home directory.  
+   The arguments -G uucp adds the user to the dialout group  
+   (so that useraccount has control of RS-232 serial ports and devices connected to them).  
+   uucp/dialout group is required for using Z-Wave and Zigbee controllers.  
       `sudo useradd -rm homeassistant -G uucp`
 
-3. Create a directory for the installation of Home Assistant and
-   change the owner to the homeassistant account.
-      cd /srv
+3. Create a directory for the installation of Home Assistant and  
+   change the owner to the homeassistant account.  
+      `cd /srv
       sudo mkdir homeassistant
-      sudo chown homeassistant:homeassistant homeassistant
+      sudo chown homeassistant:homeassistant homeassistant`
 
-4. Create and change to a virtual environment for Home Assistant.
-   This will be done as the homeassistant account.
-      sudo -u homeassistant -H -s
+4. Create and change to a virtual environment for Home Assistant.  
+   This will be done as the homeassistant account.  
+      `sudo -u homeassistant -H -s
       cd /srv/homeassistant
       python3 -m venv .
-      source bin/activate
+      source bin/activate`
 
-5. Once you have activated the virtual environment (notice the prompt change),
-   install a required python package.
-      python3 -m pip install wheel
+5. Once you have activated the virtual environment (notice the prompt change),  
+   install a required python package.  
+      `python3 -m pip install wheel`
 
-6. Now install homeassistant via pip
-      pip3 install homeassistant
+6. Now install homeassistant via pip  
+      `pip3 install homeassistant`
 
-7. Start Home Assistant for the first time.
-   Doing the below will complete the installation, create the .homeassistant configuration
-   directory in the /home/homeassistant directory and install any basic dependencies.
-      cd /srv/homeassistant
-      hass
+7. Start Home Assistant for the first time.  
+   Doing the below will complete the installation, create the .homeassistant configuration  
+   directory in the /home/homeassistant directory and install any basic dependencies.  
+      `cd /srv/homeassistant
+      hass`
 
-7. You can now reach your installation on your Raspberry Pi/PC over
-   the web interface on http://ipaddress:8123.
+7. You can now reach your installation on your Raspberry Pi/PC over  
+   the web interface on http://ipaddress:8123.  
    (Change the ipaddress part to be whatever your ip address is).
 
 ### SOURCE:  
