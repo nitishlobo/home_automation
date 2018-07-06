@@ -1,10 +1,19 @@
 # WELCOME TO MY HASS REPO! 
 May you find what you seek.
+  
+  
+**HERE'S WHAT THIS README HAS TO OFFER:**
+- [Introduction to Hass (home assistant)]()  
+- [How to setup HASS](https://gitlab.com/nitishlobo/hass_config/master/README.md#software-setup-for-home-assistant-hass)  
+- [Prepping your computer for git-crypt](https://gitlab.com/nitishlobo/hass_config/master/README.md#pre-software-setup-for-git-crypt)  
+- [How to setup git-crypt in order to ensure certain files remain private](https://gitlab.com/nitishlobo/hass_config/master/README.md#software-setup-for-git-crypt)
 
-Here's what this readme has to offer:  
-[How to setup a home assistant (Hass)](https://gitlab.com/nitishlobo/hass_config/master/README.md#software-setup-for-home-assistant-hass)  
-[Prepping your computer for git-crypt](https://gitlab.com/nitishlobo/hass_config/master/README.md#pre-software-setup-for-git-crypt)
-[How to setup git-crypt in order to ensure certain files remain private](https://gitlab.com/nitishlobo/hass_config/master/README.md#software-setup-for-git-crypt)
+<br />
+<br />
+<br />
+## INTRODUCING HASS:
+What is HASS?
+Hass stands for home assistant. It is a tool for home automation.
 
 ## SOFTWARE SETUP FOR HOME ASSISTANT (HASS):
 1. Install dependencies if they are not already installed.  
