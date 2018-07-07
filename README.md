@@ -164,7 +164,7 @@ https://www.home-assistant.io/docs/autostart/systemd/
 6. Now tell git which key to use.  
       `git config --global user.signingkey [your own GPG key ID goes here, eg. 30F2B65B9246B6CA]`
 
-**SOURCE:**
+**SOURCE:**  
 https://docs.gitlab.com/ee/user/project/repository/gpg_signed_commits/index.html
 
 <br />
