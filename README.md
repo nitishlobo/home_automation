@@ -1,7 +1,8 @@
 # WELCOME TO MY HASS REPO! 
-May you find what you seek.
-  
-  
+May you find what you seek.  Truly.
+
+<br />
+
 **HERE'S WHAT THIS README HAS TO OFFER:**
 - [Introduction to Hass (home assistant)]()  
 - [How to setup HASS](https://gitlab.com/nitishlobo/hass_config/master/README.md#software-setup-for-home-assistant-hass)  
@@ -9,11 +10,38 @@ May you find what you seek.
 - [How to setup git-crypt in order to ensure certain files remain private](https://gitlab.com/nitishlobo/hass_config/master/README.md#software-setup-for-git-crypt)
 
 <br />
-<br />
-<br />
+
 ## INTRODUCING HASS:
-What is HASS?
-Hass stands for home assistant. It is a tool for home automation.
+**What is HASS?**  
+Hass stands for home assistant. It is a tool for home automation which involves a  
+web UI and an app for monitoring and managing your home or better yet letting your home do it for you.  
+
+Think IoT, think futuristic tech and you'll get the idea.  
+And if you didn't get that mumbo jumbo, then the next best explanation is some sort of JARVIS (from Iron Man).
+
+**Why should I care about HASS?**  
+Allow me to build a case for HASS:
+- Ever walked up to the steps of your home and fumbled in the dark for your keys while juggling a handful of grocery bags?  
+What if instead your home knew it was you, switched its lights on and opened its door by itself for you?  
+- Now imagine you continue walking both hands full with those heavy grocery bags, from room to room inside the home and  
+lights automatically turned on in the rooms you entered and turned off in the room you left? Now, wouldn't that be helpful?
+
+- Been in a rush and wanted those slow garage door and gates to pre-open before you hop into the car rather than be in the car tapping your fingers away?  
+My friend, I believe the magic word you are looking for here is `done`.
+
+- Ever left home in a rush and wondered if you left that stove on or the iron or anything else that could burn your home down?  
+What about any other devices (like giant TV, heater, etc.) that 2x those power bills?  
+What if instead your home knew that neither you nor your family/friends are in the home and just turned everything you wanted off, well, off?
+
+- During your busy work day, a burgular jumps across your fence and decides to do some 'work' of his own.  
+Your home is aware of this and takes a photo of the burgular, rings the police via a home AI (eg. google assistant), emails them this photo    
+and then sends you a text message/email to let you know that bad things have happened and its been taken care of.
+
+- Wanted to play a movie and wanted the lights to automatically dim to set the mood?
+
+- But all this is only the tip of the iceberg, the possibilities are endless and just like the rest of life, its what you make out of it.
+
+<br />
 
 ## SOFTWARE SETUP FOR HOME ASSISTANT (HASS):
 1. Install dependencies if they are not already installed.  
@@ -93,7 +121,8 @@ https://www.home-assistant.io/docs/installation/raspberry-pi/
 **SOURCE:**  
 https://www.home-assistant.io/docs/autostart/systemd/
 
-------------------------------------------------------------------
+<br />
+
 ## PRE-SOFTWARE SETUP FOR GIT-CRYPT:
 1. Check whether you have GPG installed already (ie. type gpg --version).  
    Otherwise download the GPG command line tool from https://www.gnupg.org/download/  
@@ -138,7 +167,8 @@ https://www.home-assistant.io/docs/autostart/systemd/
 **SOURCE:**
 https://docs.gitlab.com/ee/user/project/repository/gpg_signed_commits/index.html
 
-------------------------------------------------------------------
+<br />
+
 ## SOFTWARE SETUP FOR GIT-CRYPT:
 1. Download git crypt from:  
    https://www.agwa.name/projects/git-crypt/downloads/git-crypt-0.6.0.tar.gz
