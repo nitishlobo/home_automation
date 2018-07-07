@@ -1,4 +1,4 @@
-# WELCOME TO MY HASS REPO! 
+# WELCOME TO NITISH'S HASS REPO! 
 May you find what you seek.  Truly.
 
 <br />
