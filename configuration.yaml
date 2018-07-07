@@ -23,10 +23,9 @@ frontend:
 config:
 
 http:
-  # Secrets are defined in the file secrets.yaml
-  # api_password: !secret http_password
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
+  api_password: !secret http_password
+  ip_ban_enabled: True
+  login_attempts_threshold: 5
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -64,6 +63,7 @@ switch:
   switches:
     room_heater:
       host: !secret room_heater_host
+      name: Room Heater
 
 # Text to speech
 tts:
