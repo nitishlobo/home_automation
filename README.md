@@ -4,7 +4,7 @@ May you find what you seek.  Truly.
 <br />
 
 **HERE'S WHAT THIS README HAS TO OFFER:**
-- [Introduction to Hass (home assistant)]()  
+- [Introduction to HASS (home assistant)]()  
 - [How to setup HASS](https://gitlab.com/nitishlobo/hass_config/master/README.md#software-setup-for-home-assistant-hass)  
 - [Prepping your computer for git-crypt](https://gitlab.com/nitishlobo/hass_config/master/README.md#pre-software-setup-for-git-crypt)  
 - [How to setup git-crypt in order to ensure certain files remain private](https://gitlab.com/nitishlobo/hass_config/master/README.md#software-setup-for-git-crypt)
@@ -13,7 +13,7 @@ May you find what you seek.  Truly.
 
 ## INTRODUCING HASS:
 **What is HASS?**  
-Hass stands for home assistant. It is a tool for home automation which involves a  
+HASS stands for home assistant. It is a tool for home automation which involves a  
 web UI and an app for monitoring and managing your home or better yet letting your home do it for you.  
 
 Think IoT, think futuristic tech and you'll get the idea.  
