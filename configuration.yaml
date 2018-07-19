@@ -10,8 +10,26 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: !secret time_zone
-  # Customization file
+
   customize: !include customize.yaml
+
+http:
+  api_password: !secret hass_http_password
+  ip_ban_enabled: True
+  login_attempts_threshold: 5
+
+# Weather prediction
+sensor:
+  - platform: darksky
+    name: Blue Skies
+    api_key: !secret dark_sky_api_key
+
+switch:
+  platform: kankun
+  switches:
+    room_heater:
+      host: !secret room_heater_host
+      name: Room Heater
 
 # Show links to resources in log and frontend
 introduction:
@@ -21,11 +39,6 @@ frontend:
 
 # Enables configuration UI
 config:
-
-http:
-  api_password: !secret http_password
-  ip_ban_enabled: True
-  login_attempts_threshold: 5
 
 # Checks for available updates
 # Note: This component will send some information about your system to
@@ -53,17 +66,6 @@ map:
 
 # Track the sun
 sun:
-
-# Weather prediction
-sensor:
-  - platform: yr
-
-switch:
-  platform: kankun
-  switches:
-    room_heater:
-      host: !secret room_heater_host
-      name: Room Heater
 
 # Text to speech
 tts:
